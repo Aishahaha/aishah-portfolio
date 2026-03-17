@@ -4,6 +4,12 @@ import Tagging from "@/components/Tagging";
 import PrimaryButton from "@/components/ui/PrimaryButton";
 import SecondaryButton from "@/components/ui/SecondaryButton";
 import ProjectCard from "@/components/ProjectCard";
+
+import profile from "../assets/homepage/profile-2.png";
+import healthhub from "../assets/homepage/hero-4.png";
+import reerth from "../assets/homepage/hero-1.png";
+import chope from "../assets/homepage/hero-2.png";
+
 function Home() {
   return (
     <main className="main-container">
@@ -115,11 +121,7 @@ function Home() {
                 repeat: Infinity,
               }}
             >
-              <img
-                src="/src/assets/homepage/profile-2.png"
-                alt=""
-                className="h-100 w-auto"
-              />
+              <img src={profile} alt="" className="h-100 w-auto" />
             </motion.div>
           </div>
         </div>
@@ -149,21 +151,21 @@ function Home() {
                 tags={["Vue.js", "GSAP", "Sitecore"]}
                 description="High-performance microsite built with Vue.js and GSAP animations for Singapore's national health platform."
                 link="https://www.healthhub.sg/programmes/healthy-ageing"
-                image="/src/assets/homepage/hero-4.png"
+                image={healthhub}
               />
               <ProjectCard
                 title="RE:ERTH"
                 tags={["Shopify", "Liquid"]}
                 description="Skincare e-commerce with complex animations."
                 link="https://reerth.com"
-                image="/src/assets/homepage/hero-3.png"
+                image={reerth}
               />
               <ProjectCard
                 title="Chope"
                 tags={["WordPress", "AOS.js"]}
                 description="Multi-country restaurant platform."
                 link="https://restaurants.chope.co/singapore"
-                image="/src/assets/homepage/hero-6.png"
+                image={chope}
               />
             </div>
           </motion.div>
